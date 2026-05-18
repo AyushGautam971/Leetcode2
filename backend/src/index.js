@@ -14,7 +14,10 @@ const cors = require('cors')
 // console.log("Hello")
 
 app.use(cors({
-   origin: 'https://leetcode2-six.vercel.app',
+   origin: [
+        "http://localhost:5173",
+        "https://leetcode2-six.vercel.app"
+    ],
     credentials: true 
 }))
 
